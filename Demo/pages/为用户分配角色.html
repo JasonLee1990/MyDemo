@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户管理</title>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.formautofill.min.js"></script>
+<script type="text/javascript" src="js/userFunctions.js"></script>
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<style type="text/css">
+* {
+	font-family: "微软雅黑"
+}
+
+.header .nav>.active>a {
+	background-color: #ddd;
+	background-image: none;
+	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
+}
+
+.container .mgr {
+	background-color: transparent;
+	font-size: 14px;
+	line-height: 1.428571429;
+	padding-left: 0;
+	padding-right: 0;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div>
+				<h3 class="text-muted">用户管理</h3>
+			</div>
+		</div>
+		<div class="row jumbotron rolemgr mgr">
+			<div class="panel panel-default">
+				<div class="panel-heading">用户</div>
+				<div class="panel-body">
+					<div class="row">
+						<form class="navbar-form" id="searchUserForm" role="search">
+							<div class="pull-left">
+								<label for="roleName" class="form-label">用户名称：</label>
+								<div class="form-group">
+									<input type="text" name="roleName" class="form-control" placeholder="输入用户名称">
+								</div>
+							</div>
+							<div class="btn-group pull-right">
+								<button type="button" id="userSearchBtn" class="btn btn-success">
+									<i class="glyphicon glyphicon-search"></i>查询
+								</button>
+								<button type="button" id="userCreateBtn" class="btn btn-default" >
+									<i class="glyphicon glyphicon-asterisk"></i>创建
+								</button>
+								<button type="button" id="userEditBtn" class="btn btn-default">
+									<i class="glyphicon glyphicon-edit"></i>编辑
+								</button>
+								<button type="button" id="userRemoveBtn" class="btn btn-danger">
+									<i class="glyphicon glyphicon-trash"></i>删除
+								</button>
+							</div>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<div class="row">
+						<div style="margin: 0 10px;">
+							<table class="userTable table table-bordered table-hover table-condensed">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>用户名</th>
+										<th>用户机构</th>
+										<th>用户角色</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>用户1</td>
+										<td>拍拍贷</td>
+										<td>用户角色1</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>用户2</td>
+										<td>拍拍贷</td>
+										<td>用户角色2</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>用户3</td>
+										<td>拍拍贷</td>
+										<td><input name="rule" placeholder="输入角色名称" /></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>用户2</td>
+										<td>拍拍贷</td>
+										<td><input name="rule" placeholder="输入角色名称" /></td>
+									</tr>
+								</tbody>
+							</table>
+							<ul class="pagination" style="margin: 0">
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- 为用户分配角色模态框 -->
+		<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="ruleTile" aria-hidden="true">
+			<div class="modal-dialog" style="width: 400px;">
+				<div class="modal-content">
+					<form class="form-horizontal" role="form" id="userForm">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title" id="ruleTile">初审规则创建</h4>
+						</div>
+						<div class="modal-body">
+							<input type="hidden" name="org" value="orgyyd">
+							<div class="form-group">
+								<label for="name" class="col-xs-2 control-label">名称</label>
+								<div class="col-xs-10">
+									<input type="text" class="form-control" id="name" name="name">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">确定</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/shiro-all-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-aspectj-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-cas-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-core-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-guice-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-quartz-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-spring-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/shiro-web-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j-1.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-framework-bom-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-instrument-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-instrument-tomcat-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jms-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-orm-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-oxm-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-struts-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-test-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/ecj-4.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files/apache-tomcat-7.0.37/lib/tomcat-util.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

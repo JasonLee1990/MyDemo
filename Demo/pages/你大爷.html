@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>角色管理</title>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.formautofill.min.js"></script>
+<script type="text/javascript" src="js/myFunctions.js"></script>
+<script src="dist/jstree.min.js"></script>
+<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<script type="text/javascript">
+	$(function() {
+		$('#treeInstance').jstree({core:});
+		$('#treeInstance').on("changed.jstree", function(e, data) {
+			console.log(data.selected);
+		});
+		// 8 interact with the tree - either way is OK
+		$('button').on('click', function() {
+			$('#jstree').jstree(true).select_node('child_node_1');
+			$('#jstree').jstree('select_node', 'child_node_1');
+			$.jstree.reference('#jstree').select_node('child_node_1');
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">jsTreeDemo</div>
+			<div class="panel-body" id="treeInstance">
+				<ul>
+					<li>Root node 1
+						<ul>
+							<li id="child_node_1">Child node 1</li>
+							<li>Child node 2</li>
+						</ul>
+					</li>
+					<li>Root node 2</li>
+				</ul>
+			</div>
+			<button>demo button</button>
+		</div>
+	</div>
+</body>
+</html>
