@@ -92,6 +92,40 @@ $(document).ready(function() {
 
 	//表单初始化及事件绑定
 	$('#roleForm').on('init.form', function() {
+		$(this).bootstrapValidator({
+        message: '值无效',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                message: '用户名无效',
+                validators: {
+                    notEmpty: {
+                        message: '需要用户名且不为空'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: '用户名长度在6到30之间'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: '用户名格式错误'
+                    }
+                }
+            },
+            type: {
+                validators: {
+                    notEmpty: {
+                        message: '类型不能为空'
+                    }
+                }
+            }
+        }
+    });
 		//对视图中的按钮的事件绑定
 		$('#roleSearchBtn').on('click', $.proxy(function() {
 			$(this).trigger('search.form');
